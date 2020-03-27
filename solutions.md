@@ -7,8 +7,9 @@ SELECT count(film_id)::DECIMAL / (SELECT count(film_id) FROM film)
 
 2.What is the percentage breakdown of all films by rating? (Format this answer as a [table](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables) in Markdown)
 Answer:
+ 
  rating | count
- ---      ---
+       
  NC-17  | 210
 
  R      | 195

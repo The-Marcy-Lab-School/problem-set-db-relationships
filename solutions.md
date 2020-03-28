@@ -127,7 +127,7 @@
         WHERE store.store_id = 2;
         ```
         
-11)Store 1's total replacement cost is $46205.30 and store 2 is $46415.89
+11) Store 1's total replacement cost is $46205.30 and store 2 is $46415.89
 
     SQL:
         ```sql

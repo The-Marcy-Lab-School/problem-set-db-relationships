@@ -3,7 +3,7 @@
 1) 34% of films have a rental rate of 0.99
 
     SQL:
-        ```sql
+        ```psql
         SELECT count(film.rental_rate) / 10 AS "Percentage of rental rate of 0.99"
         from film                       
         where film.rental_rate = 0.99;
@@ -18,7 +18,7 @@
     | PG            | 19%           |
     
     SQL:
-        ```sql
+        ```psql
         SELECT film_list.rating AS "Rating",
         count(film_list.fid) / 10 AS "Percentage"
         FROM film_list
@@ -28,7 +28,7 @@
 3) Gina Degeneres appeared in the most films
 
     SQL:
-        ```sql
+        ```psql
         SELECT actor.first_name AS "First Name",
         actor.last_name AS "Last Name",
         count(film_actor.actor_id) AS "Total Movies"
@@ -42,7 +42,7 @@
 4) Eleanor Hunt is who rented the most
 
     SQL:
-        ```sql
+        ```psql
         SELECT customer.first_name AS "First Name",
         customer.last_name AS "Last Name",
         count(rental.customer_id) AS "Total Rentals"
@@ -56,7 +56,7 @@
 5) The longest rental was 9 days
 
     SQL:
-        ```sql
+        ```psql
         SELECT max (rental.return_date - rental.rental_date)
         FROM rental;
         ```
@@ -64,7 +64,7 @@
 6) The address is "28 MySQL Boulevard" 
 
     SQL:
-        ```sql
+        ```psql
         SELECT address.address AS "Address of Store", 
         count(inventory.store_id) AS "Total Films in Inventory"
         FROM store JOIN inventory
@@ -78,7 +78,7 @@
 7) The sports category has the most films and it has a total of 74 films
 
     SQL:
-        ```sql
+        ```psql
         SELECT category.name AS "Category",
         count (film_category.film_id) AS "Total Films"
         FROM film_category JOIN category
@@ -91,7 +91,7 @@
 8) The address is "613 Korolev Drive"
 
     SQL:
-        ```sql
+        ```psql
         SELECT address.address AS "Address",
         customer.first_name AS "First Name",
         customer.last_name AS "Last Name"
@@ -103,7 +103,7 @@
 9) They live in Caracas
 
     SQL:
-        ```sql
+        ```psql
         SELECT customer.first_name AS "First Name",
         customer.last_name AS "Last Name",
         city.city AS "City", 
@@ -117,7 +117,7 @@
 10) It is located in Australia
 
     SQL:
-        ```sql
+        ```psql
         SELECT store.store_id AS "Store #",
         country.country AS "Country"                                                                                                                                     
         FROM store JOIN address
@@ -130,7 +130,7 @@
 11)Store 1's total replacement cost is $46205.30 and store 2 is $46415.89
 
     SQL:
-        ```sql
+        ```psql
         SELECT inventory.store_id AS "Store Number",
         sum(film.replacement_cost) AS "Total Replacement Cost"
         FROM inventory JOIN film

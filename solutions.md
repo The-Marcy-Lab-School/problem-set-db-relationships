@@ -1,6 +1,7 @@
-##Annswers:
+## Answers:
 
 1) 34% of films have a rental rate of 0.99
+
     SQL:
         ```sql
         SELECT count(film.rental_rate) / 10 AS "Percentage of rental rate of 0.99"
@@ -25,6 +26,7 @@
         ```
         
 3) Gina Degeneres appeared in the most films
+
     SQL:
         ```sql
         SELECT actor.first_name AS "First Name",
@@ -38,6 +40,7 @@
         ```
         
 4) Eleanor Hunt is who rented the most
+
     SQL:
         ```sql
         SELECT customer.first_name AS "First Name",
@@ -51,6 +54,7 @@
         ```
         
 5) The longest rental was 9 days
+
     SQL:
         ```sql
         SELECT max (rental.return_date - rental.rental_date)
@@ -58,6 +62,7 @@
         ```
         
 6) The address is "28 MySQL Boulevard" 
+
     SQL:
         ```sql
         SELECT address.address AS "Address of Store", 
@@ -71,6 +76,7 @@
         ```
 
 7) The sports category has the most films and it has a total of 74 films
+
     SQL:
         ```sql
         SELECT category.name AS "Category",
@@ -83,6 +89,7 @@
         ```
 
 8) The address is "613 Korolev Drive"
+
     SQL:
         ```sql
         SELECT address.address AS "Address",
@@ -94,6 +101,7 @@
         ```
         
 9) They live in Caracas
+
     SQL:
         ```sql
         SELECT customer.first_name AS "First Name",
@@ -107,6 +115,7 @@
         ```
         
 10) It is located in Australia
+
     SQL:
         ```sql
         SELECT store.store_id AS "Store #",
@@ -119,6 +128,7 @@
         ```
         
 11)Store 1's total replacement cost is $46205.30 and store 2 is $46415.89
+
     SQL:
         ```sql
         SELECT inventory.store_id AS "Store Number",
@@ -128,5 +138,6 @@
         GROUP BY inventory.store_id;
         ```
     
-##Pagila ERP:
+## Pagila ERP:
+
 ![pagila erp](https://app.diagrams.net?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G124Ic1JBylnN1VKZOmQt66ZVWqKdWNvuT)

@@ -63,7 +63,7 @@ SELECT address FROM address WHERE address_id = 2 ;
 ```
 
 7.Which category has the most films? How many films are in that category?
-**Answer: Sports
+**Answer: Sports**
 ```sql
 SELECT category.name, count (film_category.film_id) AS "COUNT"
 FROM film_category JOIN category
@@ -75,7 +75,7 @@ ORDER BY count(film_category.film_id) DESC LIMIT 1
 ```
 
 8.What is the address of the customer "Margaret Moore"? (Just the street address. Not the district, city, and ZIP code)
-Answer: 613 Korolev Drive
+**Answer: 613 Korolev Drive**
 ```sql
 SELECT customer.first_name , customer.email , address.address
 FROM customer JOIN address
@@ -85,7 +85,7 @@ WHERE customer.first_name = 'MARGARET'
 ```
 
 9.There is a customer with the email "CARMEN.OWENS@sakilacustomer.org". What is the name of the city that they live in?
-Answer: Caracas
+**Answer: Caracas**
 
 ```sql
 SELECT customer.first_name , customer.address_id , city.city
@@ -117,6 +117,4 @@ ON inventory.film_id = film.film_id
 GROUP BY inventory.store_id ;
 ```
 
-
-
-
+[pagila ERD](https://app.diagrams.net?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=pagila-ERD#R7V1dc9o4FP01vOxMOrYl2%2FAYSLLb2XS3k%2Bxs26eMigWoNRZrRID%2B%2BpWMBLYExMWAPB21mYl1bcuS7tH9OJKdDhhMV7%2FnaDb5QBOcdgIvWXXAXScI%2FF7Y5b%2BEZC0lIYAbyTgnyUbm7QTP5AeWFyrpgiR4LmUbEaM0ZWRWFQ5pluEhq8hQntNl9bIRTZOKYIbG2BA8D1FqSj%2BRhE020m7o7eR%2FYDKeqCf7njwzRepiKZhPUEKXJRG474BBTinbHE1XA5yK0auOy8OBs9uG5ThjdW7499t%2FS%2FLtz9eYvvQ%2FfYq78C%2F05UbW8orShezww%2Ft02gmilNfZ%2F5rzo7E4uh0ympviAWJ4TPO1eeYRZeOFGFvjzPvslbd4701P%2FARKTfkzQ6PRPjHN9zxgsJgzOsV7mvtA0ukL2t%2BV4txw259CY2ytYMDwSlw0YdOUC3x%2BOGc5%2FY4HNOWVgbuMZvzK%2FoikqSZCKRlnvDjkfeNtAv1XnDPCAXYrT0xJkojH9JcTwvDzDA3FM5d8PnFZThdZgoUGPV6SyuIV4NVBFPhbbPFZiflAMNEfT95ww6fg5p7lDs58nm5kkzKUQSynkZxC421lO5TxAwm0nwBdCA3UGQOOEz4NZZF3jbD1E04RIzS7353pj2jGpM3wg6p%2BcJbcivnPi%2FdPU5StC52hnBlSXn2%2B%2FiyHuCh8EYV3oSrercon79YVbYiGHtcF7xdd5EN8ZESAtGwoH2N25DoY7lduWZfKAFV0qYR5MYiv1RbvU7B8xkdKeF%2B26AkUUJQ5j7vVKjY9lXeVjZFWEdAq0uvZjIRRTwG3bb8bIDD8JRCIV4R9Vk%2Fjx6W7eGl3kyhcALUQ1oRt1y5qwy7QUAtPQ20UafBXtvRKsI2ubji5D%2FuHfmiNnawLuENO8Gp20vMrQOGQOw1xvW6lHqDizmsB7up2sgy4czrYqC5yvI5V5MA4qGo8Ck5DTtjrVSvqaRC8NHQiq7bKrmesDTcQ2IabZmCgZmDqwi2Oq64R%2Ble2VPGvYqnimtCBli1V1PWqGocn%2BrhQM3lbp3cl6EBgQKdMFGggmi%2FJNEXZFinyjDAgwwlJk0e0pgsx1DzUH35Xpf6E5uQHLegNxR%2FwTEDiLIg07qATAOyJ%2F5U7n0WN8lk5nvN7PyqA%2BZroA1pVLnxEc6ZaSdMUzebka9FuceOUjy%2FJ%2BpQxOpUXqV4%2BVBs1Kv7tYzXKswaeh6oIYDVsD%2FcQF9EegOu55Nl4C2iG3wVGXkjym4ETyRjVpYnmMzQk2fgRj0Qv4E7yJDsmRJSP5ygt7M%2BEJAnOCoaIIYa%2BbkE4E9Ok6HnY5z98fAbC8YW8TQNe9ndl%2FiMuz9mAZryZiBRqwRwpSyzQYljCWjo9MsVMTasZH9XTrLru%2FJo149yRMAFOsc0UGwaWFatciyN6msQkUa9mTGKZntzWs02eTiR69NzJ05KwC0ck8dV5nrYT5H5d5mcDVZtcYzUoDk7Mp7o6DaC15MII9M2FwcGhtTEXEV8rIr4BYZVX9OOaMbHvwcNIbuRhfdPDqlVUFz69FT75B%2FTdlrjYN1PjDE2xU2oDpVqPiX0zukj5OLwsZgmfuE63DXSrqAd7%2BY5V1v2MAV9YM97zI7vx3nYJWJnssHdawOdrdCqIr0ugK%2BheNedI%2Ft7YDCPtkCea5sveu163nDPfeO98Lz6aNovCR5wTPp4ijDt3IhPUBTa0vISth5pRpNmsusCGWkWhXtGlgd1rI7BPIHRakIbXRu9ml69F9CrmR6H31I1qMKgm9GHvumZZ8QBtoYLsEpGq829v47CMv65fNXpApck%2Fva6uVQT1ii6MP2ASQXI3tmOBLLFAYU9zqFCW7ZFAwLRSc4ESxwC9lVCCljNAwGSARiSfsxfHAzVUrXUeCBzggZxmG2rWOgsEzJRn91KU89u2%2FLaWk0Dlju35bbXbs7x4I4HiXPebVuDAUnNbXDc0Q3fnus%2BiWuuuG5rxtnPd59CsdddtKlbsRXZe296eC22BR6wf2M6299h1t1n17bkftNxfG2plhKXOnjfQqXVHbe4rT%2FB8mJOZYOedZk%2FXrHVHHZnr5cc%2FIeJc9tVcdqCvvqhFO2uvDsVmou18dh0rEB34dkRbnHZkUm2l7a9Otw10a915%2B6b33n3Wyll3a9Y9qhh32KuJkwvugTd3XaYSKM7Cv7ml9sBLY22x8L75ZQFHszVUqn3Tbkbvbg%2F8eXRrPTMLTH5MfVjSOW1b33Lwq99yAFFNlFzOaQcm35YXMHEu%2B01qpuWfcwjMeKy0rO1020C31j13YCZlaquhU2wDxVp3277JpJQ%2BFe08ty3Prb9y3rXvuU0ylWSik%2B6d8zrhe8u3LamOmFS502sDvdp33MEex01z7BTbTLHWHTcwIzL5lxmc07a11RhU0%2B2gBZuWzJxMTX%2FnsI9vWWw5QQ5MgnyKMjTmybbLzM6gYOueG5hkOUoSbh3nTrXNVGvdd5tT99Z99diu64bVt4RC6557z%2Bx3Xz2uM%2Fnjdvttk29zrwedQ7HW%2FbVv8mPu7aAzKPaC3poXd38JcvPtjt0f1AT3%2FwM%3D)

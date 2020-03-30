@@ -94,6 +94,7 @@ WHERE store.store_id = 2;`
 |--------------------------------|--------:|
 |                       46205.30 |       1|
 |                       46415.89 |       2|
+
 `SELECT sum(film.replacement_cost) AS "Replacement Cost for Each Store", inventory.store_id AS "Store #"
 FROM inventory
 JOIN film ON film.film_id = inventory.film_id

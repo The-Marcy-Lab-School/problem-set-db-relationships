@@ -1,9 +1,9 @@
 # Problem Set 7.2 - Intro to Relational Databases
 
 ### Directions
-Fork and clone this repo. For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database. 
+Fork and clone this repo. For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database.
 
-## Part I: SQL Challenges 
+## Part I: SQL Challenges
 In `solutions.md`, write your solutions to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.
 
 1. What ~~percentage~~ total # of films have a rental rate of $0.99?

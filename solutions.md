@@ -12,7 +12,7 @@ FROM film_list
 GROUP BY film_list.rating;`
 
 |Rating | % |
-|--------+----|
+|-------|---:|
 |G      | 17|
 |NC-17  | 21|
 |R      | 19|

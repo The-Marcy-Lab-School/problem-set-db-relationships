@@ -24,7 +24,7 @@ Breakdown:
 FROM film_list
 GROUP BY film_list.rating;`
 |Rating | Breakdown|
-|--------+-----------|
+|-------|----------:|
 |G      |       177|
 |NC-17  |       210|
 |R      |       193|
@@ -91,7 +91,7 @@ WHERE store.store_id = 2;`
 
 11.
 |Replacement Cost for Each Store | Store # |
-|---------------------------------+---------|
+|--------------------------------|--------:|
 |                       46205.30 |       1|
 |                       46415.89 |       2|
 `SELECT sum(film.replacement_cost) AS "Replacement Cost for Each Store", inventory.store_id AS "Store #"

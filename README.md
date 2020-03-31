@@ -8,7 +8,7 @@ Fork and clone this repo. For this problem set, you will be working with the [Pa
 
 In `solutions.md`, write your solutions to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.
 
-1.  What percentage of films have a rental rate of $0.99?
+1.  What percentage of films have a rental rate of `$0.99`?
 
 -   The total number of films is `1000` determined by the query:
 
@@ -16,7 +16,7 @@ In `solutions.md`, write your solutions to the questions below. Also, include th
     SELECT COUNT(title) FROM film;
     ```
 
-    The total number of films with a rental rate of $0.99 is `341` determined by the query:
+    The total number of films with a rental rate of `$0.99` is `341` determined by the query:
 
     ```SQL
     SELECT COUNT(rental_rate) FROM film WHERE rental_rate = 0.99;
@@ -71,13 +71,26 @@ In `solutions.md`, write your solutions to the questions below. Also, include th
 5.  What was the longest rental period? (Hint: See `rental.rental_date` and `rental.return_date`)
 
 -   It seems a good chunk of people didn't return their movies. In terms of law abiding customers, the longest period was 9 days, 5 hours, 59 minutes, 0 seconds.
+
     ```SQL
     SELECT (rental.return_date - rental.rental_date) AS duration FROM rental ORDER BY duration DESC;
     ```
 
 6.  What is the address of the store with the most films in their inventory?
 
--   The store with the most films is located at...
+-   The store with the most films is located at 28 MySQL Boulevard.
+
+    ```SQL
+    SELECT a.address, COUNT(i.film_id)
+    FROM store s
+    JOIN address a
+    ON a.address_id = s.address_id
+    JOIN inventory i
+    ON s.store_id = i.store_id
+    GROUP BY a.address
+    ORDER BY count(i.film_id) DESC
+    LIMIT 1;
+    ```
 
 7.  Which category has the most films? How many films are in that category?
 8.  What is the address of the customer "Margaret Moore"? (Just the street address. Not the district, city, and ZIP code)

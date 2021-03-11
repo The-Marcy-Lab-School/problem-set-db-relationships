@@ -1,4 +1,4 @@
-# Problem - Intro to Relational Databases
+# Problem Set - Intro to Relational Databases
 
 ### Directions
 Fork and clone this repo. For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database. 

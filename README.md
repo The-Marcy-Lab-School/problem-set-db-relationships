@@ -1,4 +1,4 @@
-# Problem Set 7.2 - Intro to Relational Databases
+# Problem - Intro to Relational Databases
 
 ### Directions
 Fork and clone this repo. For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database. 
@@ -6,8 +6,8 @@ Fork and clone this repo. For this problem set, you will be working with the [Pa
 ## Part I: SQL Challenges 
 In `solutions.md`, write your solutions to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.
 
-1. What ~~percentage~~ total # of films have a rental rate of $0.99?
-2. What is the ~~percentage~~ breakdown of all films by rating? (Format this answer as a [table](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables) in Markdown)
+1. What total # of films have a rental rate of $0.99?
+2. What is the breakdown of all films by rating? (Format this answer as a [table](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables) in Markdown)
 3. Which actor appeared in the most films?
 4. Which customer has the most movie rentals?
 5. What was the longest rental period? (Hint: See `rental.rental_date` and `rental.return_date`)

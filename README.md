@@ -1,7 +1,7 @@
 # Problem Set - Intro to Relational Databases
 
 ### Directions
-Fork and clone this repo. For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database. 
+For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database. 
 
 ## Part I: SQL Challenges 
 In `solutions.md`, write your solutions to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.
@@ -39,5 +39,3 @@ Lastly, for your entities, you do not have to list the data types next to your a
 ![sample ERD](./erd.png)
 
 
-## Due Date
-Submit via PR by 9AM on Monday, March 31

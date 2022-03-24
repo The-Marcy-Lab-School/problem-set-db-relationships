@@ -1,28 +1,33 @@
 # Problem Set - Intro to Relational Databases
 
-### Directions
+## Directions
 For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database. 
-- First make sure you postgres database is up and running. 
+
+### Preparations
+1. First make sure you postgres database is up and running. 
   - On Mac, search for the postgres application (Press Command + Space for search bar) and run it. 
   - On windows, open up your Ubuntu terminal, and type in `sudo service postgresql status`. If your database is not running, you can start it with the command `sudo service postgresql start`
-- Clone down the dataset to your local computer: `git clone https://github.com/devrimgunduz/pagila.git`
-- Open up TablePlus and click "Create a new connection" ![](./screenshot-1.png)
-- Select Postgres from the subsequent menu.![](./screenshot-2.png)
-- You should know see another pop up box asking for credentials. ![](./screenshot-3.png)
+2. Clone down the [Pagila](https://github.com/devrimgunduz/pagila) repo to your local computer: `git clone https://github.com/devrimgunduz/pagila.git`
+
+### Database Set Up
+- Open up TablePlus and click "Create a new connection" ![](./assets/screenshot-1.png)
+- Select Postgres from the subsequent menu.![](./assets/screenshot-2.png)
+- You should know see another pop up box asking for credentials. ![](./assets/screenshot-3.png)
   - If you are on windows, add the new user and password you created during setup and click test
   - If you are on a mac, fill in the user as `postgres` and click test
-- You should see all the fields light up green. If you do, go ahead and click connect. ![](./screenshot-4.png)
-- After clicking connect, click on the SQL button on the top row ![](./screenshot-5.png)
-- We will now create our database in the SQL editor. Type in `CREATE DATABASE pagila` and click the "Run Current" button ![](./screenshot-8.png)
-- At the bottom you should know see "Query 1 OK: CREATE DATABASE" ![](./screenshot-9.png)
-- Click the database icon. You should be able to see the new database you just created. Click open to select that database. ![](./screenshot-10.png) ![](./screenshot-11.png)
-- Now we're going to import data into our datbase. Navigate to File > Import > From SQL Dump ![](./screenshot-12.png)
-- In the Finder/Explorer Window that comes up navigate to the directory where you cloned the pagila dataset and select open ![](./screenshot-13.png)
-- Click the import button. It may take a minute or so to completely import. Be patient! ![](./screenshot-14.png)
-- Once it's done, you'll see a green success toast on the right side of the screen ![](./screenshot-6.png)
+- You should see all the fields light up green. If you do, go ahead and click connect. ![](./assets/screenshot-4.png)
+- After clicking connect, click on the SQL button on the top row ![](./assets/screenshot-5.png)
+- We will now create our database in the SQL editor. Type in `CREATE DATABASE pagila;` and click the "Run Current" button ![](./assets/screenshot-8.png)
+- At the bottom you should know see "Query 1 OK: CREATE DATABASE" ![](./assets/screenshot-9.png)
+- Click the database icon. You should be able to see the new database you just created. Click open to select that database. ![](./assets/screenshot-10.png) ![](./assets/screenshot-11.png)
+- Now we're going to import data into our datbase. Navigate to File > Import > From SQL Dump ![](./assets/screenshot-12.png)
+- In the Finder/Explorer Window that comes up navigate to the directory where you cloned the pagila repo, select the `pagila-insert-data.sql` file, and click open. ![](./assets/screenshot-13.png)
+- Click the import button. It may take a minute or so to completely import. Be patient! ![](./assets/screenshot-14.png)
+- Once it's done, you'll see a green success toast on the right side of the screen ![](./assets/screenshot-6.png)
 - Once you refresh your page, you should be able to see the tables on the left side. The command to refresh will differ depending on your OS, but it should either be `Ctrl + R` or `Command + R`.
-- To ensure that everything worked properly, head back to your sql editor and make a query to any of the databases. You should be able to see the result below. ![](./screenshot-7.png)
-## Part I: SQL Challenges 
+- To ensure that everything worked properly, head back to your sql editor and make the query `SELECT * FROM public.actor;`. You should be able to see the result below. ![](./assets/screenshot-7.png)
+
+## Part I: SQL Challenge Short Reponse
 In `solutions.md`, write your solutions to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.
 
 1. What total # of films have a rental rate of $0.99?
@@ -55,6 +60,6 @@ Include your ERD as a link in your `solutions.md` file. You can get a link to yo
 There are some Many-to-Many relationships in here. Be sure to include the cross reference tables that mediate these relationships. For example, there is a M:M relationship between `film`s and `actor`s. This relationship is mediated by the `film_actor` table. Be sure to include that in your ERD as well.
 
 Lastly, for your entities, you do not have to list the data types next to your attributes (column). Simply place an asterisks next to the primary key of the entity. See below:
-![sample ERD](./erd.png)
+![sample ERD](./assets/erd.png)
 
 

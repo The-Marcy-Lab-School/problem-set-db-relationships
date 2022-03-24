@@ -1,4 +1,5 @@
 ## SQL Challenge
+Write your answers to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.
 
 1. What total # of films have a rental rate of $0.99?
 2. What is the breakdown of all films by rating? (Format this answer as a [table](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables) in Markdown)

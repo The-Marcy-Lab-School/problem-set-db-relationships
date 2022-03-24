@@ -2,7 +2,26 @@
 
 ### Directions
 For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database. 
-
+- First make sure you postgres database is up and running. 
+  - On Mac, search for the postgres application (Press Command + Space for search bar) and run it. 
+  - On windows, open up your Ubuntu terminal, and type in `sudo service postgresql status`. If your database is not running, you can start it with the command `sudo service postgresql start`
+- Clone down the dataset to your local computer: `git clone https://github.com/devrimgunduz/pagila.git`
+- Open up TablePlus and click "Create a new connection" ![](./screenshot-1.png)
+- Select Postgres from the subsequent menu.![](./screenshot-2.png)
+- You should know see another pop up box asking for credentials. ![](./screenshot-3.png)
+  - If you are on windows, add the new user and password you created during setup and click test
+  - If you are on a mac, fill in the user as `postgres` and click test
+- You should see all the fields light up green. If you do, go ahead and click connect. ![](./screenshot-4.png)
+- After clicking connect, click on the SQL button on the top row ![](./screenshot-5.png)
+- We will now create our database in the SQL editor. Type in `CREATE DATABASE pagila` and click the "Run Current" button ![](./screenshot-8.png)
+- At the bottom you should know see "Query 1 OK: CREATE DATABASE" ![](./screenshot-9.png)
+- Click the database icon. You should be able to see the new database you just created. Click open to select that database. ![](./screenshot-10.png) ![](./screenshot-11.png)
+- Now we're going to import data into our datbase. Navigate to File > Import > From SQL Dump ![](./screenshot-12.png)
+- In the Finder/Explorer Window that comes up navigate to the directory where you cloned the pagila dataset and select open ![](./screenshot-13.png)
+- Click the import button. It may take a minute or so to completely import. Be patient! ![](./screenshot-14.png)
+- Once it's done, you'll see a green success toast on the right side of the screen ![](./screenshot-6.png)
+- Once you refresh your page, you should be able to see the tables on the left side. The command to refresh will differ depending on your OS, but it should either be `Ctrl + R` or `Command + R`.
+- To ensure that everything worked properly, head back to your sql editor and make a query to any of the databases. You should be able to see the result below. ![](./screenshot-7.png)
 ## Part I: SQL Challenges 
 In `solutions.md`, write your solutions to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.
 

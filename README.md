@@ -21,11 +21,14 @@ For this problem set, you will be working with the [Pagila](https://github.com/d
 7. At the bottom you should know see "Query 1 OK: CREATE DATABASE" ![](./assets/screenshot-9.png)
 8. Click the database icon. You should be able to see the new database you just created. Click open to select that database. ![](./assets/screenshot-10.png) ![](./assets/screenshot-11.png)
 9. Now we're going to import data into our datbase. Navigate to File > Import > From SQL Dump ![](./assets/screenshot-12.png)
-10. In the Finder/Explorer Window that comes up navigate to the directory where you cloned the pagila repo, select the `pagila-insert-data.sql` file, and click open. ![](./assets/screenshot-13.png)
-11. Click the import button. It may take a minute or so to completely import. Be patient! ![](./assets/screenshot-14.png)
+10. In the Finder/Explorer Window that comes up navigate to the directory where you cloned the pagila repo, select the `pagila-schema.sql` file and click open. Then click the import button. It may take a minute or so to completely import. Be patient! Next. do the same and import the `pagila-insert-data.sql` file, and click open. ![](./assets/screenshot-13.png)
+11. Click the import button. ![](./assets/screenshot-14.png)
 12. Once it's done, you'll see a green success toast on the right side of the screen ![](./assets/screenshot-6.png)
 13. Once you refresh your page, you should be able to see the tables on the left side. The command to refresh will differ depending on your OS, but it should either be `Ctrl + R` or `Command + R`.
 14. To ensure that everything worked properly, head back to your sql editor and make the query `SELECT * FROM public.actor;`. You should be able to see the result below. ![](./assets/screenshot-7.png)
+
+
+**Note:** For this assignment, you will have to prefix your table names with `public.` in order to run successful SQL queries. 
 
 ## Part I: SQL Challenge Short Reponse
 In `solutions.md`, write your solutions to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.

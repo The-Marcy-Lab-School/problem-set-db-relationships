@@ -10,22 +10,22 @@ For this problem set, you will be working with the [Pagila](https://github.com/d
 2. Clone down the [Pagila](https://github.com/devrimgunduz/pagila) repo to your local computer: `git clone https://github.com/devrimgunduz/pagila.git`
 
 ### Database Set Up
-- Open up TablePlus and click "Create a new connection" ![](./assets/screenshot-1.png)
-- Select Postgres from the subsequent menu.![](./assets/screenshot-2.png)
-- You should know see another pop up box asking for credentials. ![](./assets/screenshot-3.png)
+1. Open up TablePlus and click "Create a new connection" ![](./assets/screenshot-1.png)
+2. Select Postgres from the subsequent menu.![](./assets/screenshot-2.png)
+3. You should know see another pop up box asking for credentials. ![](./assets/screenshot-3.png)
   - If you are on windows, add the new user and password you created during setup and click test
   - If you are on a mac, fill in the user as `postgres` and click test
-- You should see all the fields light up green. If you do, go ahead and click connect. ![](./assets/screenshot-4.png)
-- After clicking connect, click on the SQL button on the top row ![](./assets/screenshot-5.png)
-- We will now create our database in the SQL editor. Type in `CREATE DATABASE pagila;` and click the "Run Current" button ![](./assets/screenshot-8.png)
-- At the bottom you should know see "Query 1 OK: CREATE DATABASE" ![](./assets/screenshot-9.png)
-- Click the database icon. You should be able to see the new database you just created. Click open to select that database. ![](./assets/screenshot-10.png) ![](./assets/screenshot-11.png)
-- Now we're going to import data into our datbase. Navigate to File > Import > From SQL Dump ![](./assets/screenshot-12.png)
-- In the Finder/Explorer Window that comes up navigate to the directory where you cloned the pagila repo, select the `pagila-insert-data.sql` file, and click open. ![](./assets/screenshot-13.png)
-- Click the import button. It may take a minute or so to completely import. Be patient! ![](./assets/screenshot-14.png)
-- Once it's done, you'll see a green success toast on the right side of the screen ![](./assets/screenshot-6.png)
-- Once you refresh your page, you should be able to see the tables on the left side. The command to refresh will differ depending on your OS, but it should either be `Ctrl + R` or `Command + R`.
-- To ensure that everything worked properly, head back to your sql editor and make the query `SELECT * FROM public.actor;`. You should be able to see the result below. ![](./assets/screenshot-7.png)
+4. You should see all the fields light up green. If you do, go ahead and click connect. ![](./assets/screenshot-4.png)
+5. After clicking connect, click on the SQL button on the top row ![](./assets/screenshot-5.png)
+6. We will now create our database in the SQL editor. Type in `CREATE DATABASE pagila;` and click the "Run Current" button ![](./assets/screenshot-8.png)
+7. At the bottom you should know see "Query 1 OK: CREATE DATABASE" ![](./assets/screenshot-9.png)
+8. Click the database icon. You should be able to see the new database you just created. Click open to select that database. ![](./assets/screenshot-10.png) ![](./assets/screenshot-11.png)
+9. Now we're going to import data into our datbase. Navigate to File > Import > From SQL Dump ![](./assets/screenshot-12.png)
+10. In the Finder/Explorer Window that comes up navigate to the directory where you cloned the pagila repo, select the `pagila-insert-data.sql` file, and click open. ![](./assets/screenshot-13.png)
+11. Click the import button. It may take a minute or so to completely import. Be patient! ![](./assets/screenshot-14.png)
+12. Once it's done, you'll see a green success toast on the right side of the screen ![](./assets/screenshot-6.png)
+13. Once you refresh your page, you should be able to see the tables on the left side. The command to refresh will differ depending on your OS, but it should either be `Ctrl + R` or `Command + R`.
+14. To ensure that everything worked properly, head back to your sql editor and make the query `SELECT * FROM public.actor;`. You should be able to see the result below. ![](./assets/screenshot-7.png)
 
 ## Part I: SQL Challenge Short Reponse
 In `solutions.md`, write your solutions to the questions below. Also, include the SQL queries (formatted nicely, using a multi-line code snippet) that you used to obtain your answer.

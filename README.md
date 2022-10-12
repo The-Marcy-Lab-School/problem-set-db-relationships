@@ -1,13 +1,13 @@
 # Problem Set - Intro to Relational Databases
 
 ## Directions
-For this problem set, you will be working with the [Pagila](https://github.com/devrimgunduz/pagila) database. 
+For this problem set, you will be working with the [Pagila](https://github.com/The-Marcy-Lab-School/pagila-database) database. 
 
 ### Preparations
 1. First make sure you postgres database is up and running. 
   - On Mac, search for the postgres application (Press Command + Space for search bar) and run it. 
   - On windows, open up your Ubuntu terminal, and type in `sudo service postgresql status`. If your database is not running, you can start it with the command `sudo service postgresql start`
-2. Clone down the [Pagila](https://github.com/devrimgunduz/pagila) repo to your local computer: `git clone https://github.com/devrimgunduz/pagila.git`
+2. Clone down the [Pagila](https://github.com/The-Marcy-Lab-School/pagila-database) repo to your local computer. 
 
 ### Database Set Up
 1. Open up TablePlus and click "Create a new connection" ![](./assets/screenshot-1.png)

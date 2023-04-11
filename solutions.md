@@ -30,7 +30,7 @@ SQL Query:
 ```
 
 ## Part 2: ERD Diagram
-Create an Entity Relationship Diagram using [draw.io](https://draw.io). Include at least the following entities in your diagram and their relationships to each other.
+Create an Entity Relationship Diagram using [draw.io](https://draw.io). Include at least the following tables in your diagram and their relationships to each other.
 * film
 * actor
 * category

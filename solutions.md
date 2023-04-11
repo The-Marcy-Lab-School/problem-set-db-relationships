@@ -37,11 +37,10 @@ Create an Entity Relationship Diagram using [draw.io](https://draw.io). Include 
 * language
 
 You must include all column names, but you do not have to list the data types next to your attributes (columns). You should place an asterisks next to the primary key of the entity. See an example below:
+
 ![ERD](./assets/erd_example.png)
 
-#### Note
-There are some Many-to-Many relationships in here. Be sure to include the junction tables that link these relationships. For example, there is a M:M relationship between `film` and `actor`. This relationship is linked by the `film_actor` table. Be sure to include that in your ERD as well. 
-
+> Note: There are some Many-to-Many relationships in here. Be sure to include the junction tables that link these relationships. For example, there is a M:M relationship between `film` and `actor`. This relationship is linked by the `film_actor` table. Be sure to include that in your ERD as well. 
 
 6. [Link to your ERD should go here]
 

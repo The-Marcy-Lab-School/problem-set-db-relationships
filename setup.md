@@ -2,7 +2,7 @@
 
 ### Create the Database
 1. Clone down the [Pagila](https://github.com/The-Marcy-Lab-School/pagila-database) repository and follow the instructions in its `README.md` to create and set up your database.
-2. At this point, you can complete the entire assignment by running SQL queries in `psql`. However, for a GUI, follow the sets below.  
+2. At this point, you can complete the entire assignment by running SQL queries in `psql`. However, for a GUI, follow the instructions below.  
 
 ### Table Plus Set Up
 1. Open up TablePlus and click "Create a new connection" ![](./assets/screenshot-1.png)

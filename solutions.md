@@ -56,7 +56,7 @@ SQL Query:
 #8 Answer:
 SQL Query: 
 ```
-9. What is the address of the customer "Margaret Moore"? (Just the street address. Not the district, city, and ZIP code)
+9. What is the address of the customer "MARGARET MOORE"? (Just the street address. Not the district, city, and ZIP code)
 ```
 #9 Answer:
 SQL Query: 

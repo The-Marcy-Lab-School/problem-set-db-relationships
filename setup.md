@@ -8,8 +8,7 @@
 1. Open up TablePlus and click "Create a new connection" ![](./assets/screenshot-1.png)
 2. Select Postgres from the subsequent menu.![](./assets/screenshot-2.png)
 3. You should now see another pop up box asking for credentials. ![](./assets/screenshot-3.png)
-  - If you are on windows, add the new user and password you created during your [Postgres setup](https://github.com/The-Marcy-Lab-School/postgres-setup) and click test.
-  - If you are on a mac, fill in the user as `postgres` and click test.
+  - Fill in the user as `postgres` and click test.
 4. You should see all the fields light up green. If you do, go ahead and click connect. ![](./assets/screenshot-4.png)
 5. After clicking connect, click on the Database icon on the top row. ![](./assets/screenshot-15.png)
 6. Select the pagila database and click Open. ![](./assets/screenshot-16.png)
